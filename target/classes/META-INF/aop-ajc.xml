@@ -1,0 +1,32 @@
+<aspectj>
+<aspects>
+<aspect name="com.johnpurchase.matreq.web.SupplierController_Roo_Controller"/>
+<aspect name="com.johnpurchase.matreq.model.QuoteRequest_Roo_JavaBean"/>
+<aspect name="com.johnpurchase.matreq.model.MaterialDesc_Roo_JavaBean"/>
+<aspect name="com.johnpurchase.matreq.model.MaterialDesc_Roo_Configurable"/>
+<aspect name="com.johnpurchase.matreq.model.Purchaser_Roo_Entity"/>
+<aspect name="com.johnpurchase.matreq.model.QuoteRequest_Roo_Configurable"/>
+<aspect name="com.johnpurchase.matreq.web.MaterialRequestController_Roo_Controller"/>
+<aspect name="com.johnpurchase.matreq.model.MaterialRequest_Roo_JavaBean"/>
+<aspect name="com.johnpurchase.matreq.model.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.johnpurchase.matreq.web.MaterialDescController_Roo_Controller"/>
+<aspect name="com.johnpurchase.matreq.model.MaterialRequest_Roo_ToString"/>
+<aspect name="com.johnpurchase.matreq.model.Supplier_Roo_Finder"/>
+<aspect name="com.johnpurchase.matreq.web.SupplierController_Roo_Controller_Finder"/>
+<aspect name="com.johnpurchase.matreq.model.MaterialDesc_Roo_ToString"/>
+<aspect name="com.johnpurchase.matreq.model.QuoteRequest_Roo_ToString"/>
+<aspect name="com.johnpurchase.matreq.model.MaterialRequest_Roo_Entity"/>
+<aspect name="com.johnpurchase.matreq.model.Supplier_Roo_ToString"/>
+<aspect name="com.johnpurchase.matreq.model.QuoteRequest_Roo_Entity"/>
+<aspect name="com.johnpurchase.matreq.model.Supplier_Roo_Configurable"/>
+<aspect name="com.johnpurchase.matreq.model.Purchaser_Roo_JavaBean"/>
+<aspect name="com.johnpurchase.matreq.model.Supplier_Roo_Entity"/>
+<aspect name="com.johnpurchase.matreq.model.MaterialRequest_Roo_Configurable"/>
+<aspect name="com.johnpurchase.matreq.web.PurchaserController_Roo_Controller"/>
+<aspect name="com.johnpurchase.matreq.model.Purchaser_Roo_ToString"/>
+<aspect name="com.johnpurchase.matreq.model.Supplier_Roo_JavaBean"/>
+<aspect name="com.johnpurchase.matreq.model.Purchaser_Roo_Configurable"/>
+<aspect name="com.johnpurchase.matreq.model.MaterialDesc_Roo_Entity"/>
+</aspects>
+</aspectj>
+

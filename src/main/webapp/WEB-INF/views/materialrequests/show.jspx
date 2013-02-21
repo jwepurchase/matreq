@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_johnpurchase_matreq_model_MaterialRequest" object="${materialrequest}" path="/materialrequests" z="8xPGckfDwiUntZwtiLM/TYly4RQ=">
+        <field:display date="true" dateTimePattern="${materialRequest_requestdate_date_format}" field="requestDate" id="s_com_johnpurchase_matreq_model_MaterialRequest_requestDate" object="${materialrequest}" z="qiKWZTRw9hrSShmGnJBoDQI5cco="/>
+        <field:display field="requester" id="s_com_johnpurchase_matreq_model_MaterialRequest_requester" object="${materialrequest}" z="z0BUYt5S3+r+Em9FyrvE2GgFZGI="/>
+        <field:display field="material" id="s_com_johnpurchase_matreq_model_MaterialRequest_material" object="${materialrequest}" z="P6k4eFTb3dgZHeqK9PdIYVg6Mik="/>
+        <field:display field="unitCount" id="s_com_johnpurchase_matreq_model_MaterialRequest_unitCount" object="${materialrequest}" z="pTUThbKdsWnWpgRDKQND6J+Wm4Y="/>
+        <field:display field="daysToDelivery" id="s_com_johnpurchase_matreq_model_MaterialRequest_daysToDelivery" object="${materialrequest}" z="RuwOzZr2GrMdiZFOXL7nrHJTc44="/>
+    </page:show>
+</div>

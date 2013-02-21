@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_johnpurchase_matreq_model_MaterialDesc" object="${materialdesc}" path="/materialdescs" z="5ATM9F63dnviHYNHoa9Tvc5VIoI=">
+        <field:display field="name" id="s_com_johnpurchase_matreq_model_MaterialDesc_name" object="${materialdesc}" z="20MmPdw5ja+/EFBh48Eas5bU4NI="/>
+        <field:display field="suppliers" id="s_com_johnpurchase_matreq_model_MaterialDesc_suppliers" object="${materialdesc}" z="JcOpJ4vrcDu/kOvu7Sw7ij0vjrY="/>
+    </page:show>
+</div>

@@ -1,0 +1,57 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2013-02-14 14:28:43
+project --topLevelPackage com.johnpurchase.matreq --projectName matreq --java 6
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2013-02-14 14:28:44
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2013-02-14 14:28:49
+hint
+persistence setup --database MYSQL --provider HIBERNATE 
+hint
+entity --class ~.model.MaterialDesc 
+field string --fieldName name --notNull
+entity --class ~.model.Supplier
+field string --fieldName name --notNull
+entity --class ~.model.Purchaser
+field string --fieldName name --notNull
+web mvc setup
+focus --class ~.model.MaterialDesc
+field set --fieldName suppliers --type ~.model.Supplier
+field set --fieldName suppliers --type ~.model.Supplier --cardinality MANY_TO_MANY 
+focus --class ~.model.Supplier
+// [failed] field set --fieldName catalog --type ~.model.MaterialDesc --cardinality MANY_TO_MANY 
+field set --fieldName supplyCatalog --type ~.model.MaterialDesc --cardinality MANY_TO_MANY 
+web mvc scaffold --class ~.model.MaterialDesc
+focus --class ~.model.Supplier
+field set --fieldName materialDescs --type ~.model.MaterialDesc --cardinality MANY_TO_MANY 
+focus --class ~.model.MaterialDesc
+field set --fieldName suppliers --type ~.model.Supplier --cardinality MANY_TO_MANY 
+// [failed] field set --fieldName suppliers --type ~.model.Supplier --cardinality MANY_TO_MANY --mappedBy materialDescs
+field set --fieldName suppliers --type ~.model.Supplier --cardinality MANY_TO_MANY --mappedBy materialDescs
+entity --class ~.model.MaterialRequest 
+field date --fieldName requestDate --type java.util.Date --notNull 
+// [failed] field reference --fieldName requester --type ~.model.Purchaser --notNull --cardinality ONE_TO_MANY 
+field reference --fieldName requester --type ~.model.Purchaser --notNull --cardinality MANY_TO_ONE 
+field reference --fieldName material --type ~.model.MaterialDesc --notNull --cardinality MANY_TO_ONE 
+field number --fieldName unitCount --type float --notNull
+field number --fieldName daysToDelivery --type int --notNull
+hint
+hint controllers
+web flow
+controller scaffold --class ~.web.MaterialRequestController --entity ~.model.MaterialRequest
+web mvc all --package ~.web 
+entity --class ~.model.QuoteRequest 
+field date --fieldName requestDate --type java.util.Date
+field reference --fieldName supplier --type ~.model.Supplier --notNull --cardinality MANY_TO_ONE 
+field reference --fieldName materialRequest --type ~.model.MaterialRequest --notNull --cardinality MANY_TO_ONE 
+finder list 
+focus --class ~.model.Supplier
+finder list
+focus --class ~.model.MaterialDesc
+finder list
+focus --class ~.model.Supplier
+finder list
+finder add --finderName findSuppliersByMaterialDescs 
+focus --class ~.model.MaterialRequest
+// [failed] field set --fieldName quoteRequests --type ~.model.QuoteRequest --cardinality MANY_TO_ONE 
+field set --fieldName quoteRequests --type ~.model.QuoteRequest --cardinality ONE_TO_MANY 
+web flow
+web flow
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2013-02-17 18:30:19

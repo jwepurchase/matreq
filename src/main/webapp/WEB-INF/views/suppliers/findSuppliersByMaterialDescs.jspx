@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByMaterialDescs" id="ff_com_johnpurchase_matreq_model_Supplier" path="/suppliers" z="rP4WplcTaJ8F/Ze7x2vaDbENlNo=">
+        <field:select disableFormBinding="true" field="materialDescs" id="f_com_johnpurchase_matreq_model_Supplier_materialDescs" itemValue="id" items="${materialdescs}" multiple="true" path="/materialdescs" required="true" z="DfHO2+qmNmpiEXP6bK/he59K9Ms="/>
+    </form:find>
+</div>

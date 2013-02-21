@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_johnpurchase_matreq_model_MaterialRequest" items="${materialrequests}" z="Gt7fcdvpp0lAOhK54TVSk5zLbrg=">
+        <table:table data="${materialrequests}" id="l_com_johnpurchase_matreq_model_MaterialRequest" path="/materialrequests" z="CKLPrYFScb30cTYQfNocPZ6l2jw=">
+            <table:column date="true" dateTimePattern="${materialRequest_requestdate_date_format}" id="c_com_johnpurchase_matreq_model_MaterialRequest_requestDate" property="requestDate" z="1FPHYbBg4SYxmkgk7iuBRV9+muE="/>
+            <table:column id="c_com_johnpurchase_matreq_model_MaterialRequest_requester" property="requester" z="c7AxoZu5i0Gp0xd6xLawhPc+DwI="/>
+            <table:column id="c_com_johnpurchase_matreq_model_MaterialRequest_material" property="material" z="4f8/eL6dZfilzASEu2I6ZRGzZtw="/>
+            <table:column id="c_com_johnpurchase_matreq_model_MaterialRequest_unitCount" property="unitCount" z="PIFq38QB8ZMn+IapNi90Z2ZGj9U="/>
+            <table:column id="c_com_johnpurchase_matreq_model_MaterialRequest_daysToDelivery" property="daysToDelivery" z="KOwty1k5dYxEYpCCfTw06GyIzd4="/>
+            <table:column id="c_com_johnpurchase_matreq_model_MaterialRequest_quoteRequests" property="quoteRequests" z="ya26PDByofJshiq7q0Gq2biYjyo="/>
+        </table:table>
+    </page:list>
+</div>

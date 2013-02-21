@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+		http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+    <!-- A sample view state -->
+    <view-state id="credentials" view="purchaser_flow/credentials">
+    	<transition on="login" to="products"/>
+    </view-state>
+    
+    <view-state id="products" view="purchaser_flow/products">
+    	<transition on="select" to="summary"/>
+    </view-state>
+    
+    <view-state id="summary" view="purchaser_flow/summary">
+    	<transition on="submit" to="confirmation"/>
+    	<transition on="cancel" to="products"/>
+    </view-state>
+    
+    <!-- A sample end state -->
+    <end-state id="confirmation" view="purchaser_flow/confirmation"/>
+	
+</flow>

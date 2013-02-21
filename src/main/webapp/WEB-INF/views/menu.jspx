@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <!--
+        <menu:category id="c_flows" z="5igpkb/e+HPIN8iUErvmM38Eqqk=">
+            <menu:item id="i_flows_sampleflow" messageCode="webflow_menu_enter" url="/sampleflow" z="JMM+dAVQySYHXliwJ5d5AQocPfk="/>
+        </menu:category>
+        <menu:category id="c_materialrequest" z="XfgbqD4Qpu+80HpA3Df5z1HT60M=">
+            <menu:item id="i_materialrequest_new" messageCode="global_menu_new" url="/materialrequests?form" z="SB+ykCy2gnDhawE8VviRPUdzlck="/>
+            <menu:item id="i_materialrequest_list" messageCode="global_menu_list" url="/materialrequests?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lHtNCqknCB5seTo+x0xowPY4kGE="/>
+        </menu:category>
+        <menu:category id="c_supplier" z="8IYgP9HBdyozOk+Ymf37zKa+fNc=">
+            <menu:item id="i_supplier_new" messageCode="global_menu_new" url="/suppliers?form" z="48D4zeaX6ENxXujfvnWrtY5odlQ="/>
+            <menu:item id="i_supplier_list" messageCode="global_menu_list" url="/suppliers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="m3iWO9PZ5+HPrY21osNhms/WqIE="/>
+            <menu:item id="fi_supplier_materialdescs" messageCode="global_menu_find" url="/suppliers?find=ByMaterialDescs&amp;form" z="szK/+beHpkKcdaQ5r/KDe9G1j+8="/>
+        </menu:category>
+        <menu:category id="c_materialdesc" z="P44xJQKLmCKsYCn8Nl1ZLFbQX+s=">
+            <menu:item id="i_materialdesc_new" messageCode="global_menu_new" url="/materialdescs?form" z="lm2FtCQKlc8i3YVJZ4bumA07JI8="/>
+            <menu:item id="i_materialdesc_list" messageCode="global_menu_list" url="/materialdescs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="yYSlQqndQjRf5kEoF+uXKMvii8U="/>
+        </menu:category>
+        <menu:category id="c_purchaser" z="fqHIrW8FXMQUWSZZP//ikyvD+0Y=">
+            <menu:item id="i_purchaser_new" messageCode="global_menu_new" url="/purchasers?form" z="y0tkLVOsfJk9onTMw1bh3esKk+k="/>
+            <menu:item id="i_purchaser_list" messageCode="global_menu_list" url="/purchasers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ioICfAFaIdCqx5Qr1bBLkEniIeM="/>
+        </menu:category>
+        -->
+        <menu:category id="c_flows" z="5igpkb/e+HPIN8iUErvmM38Eqqk=">
+            <menu:item id="i_flows_sampleflow" messageCode="webflow_menu_enter" url="/sampleflow" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_flows" z="5igpkb/e+HPIN8iUErvmM38Eqqk=">
+            <menu:item id="i_flows_purchaser_flow" messageCode="webflow_menu_enter" url="/purchaser_flow" z="user-managed"/>
+        </menu:category>
+    </menu:menu>
+</div>
